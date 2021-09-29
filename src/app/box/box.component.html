@@ -1,0 +1,22 @@
+<div class="calculator">
+
+  <h1>{{ resultado }}</h1>
+
+  <div class="colunas">
+    <div class="coluna1 calculator-buttons">
+      <input type="number" name="n1" [(ngModel)]="n1">
+      <input type="number" name="n2" [(ngModel)]="n2">
+    </div>
+    <div class="coluna2 calculator-buttons">
+      <button class="calc-button is-equals"(click)=apagar()>DEL</button>
+      <button class="calc-button is-equals" (click)="dividir()">÷</button>
+      <button class="calc-button is-equals" (click)= multiplicar()>x</button>
+      <button class="calc-button is-equals" (click)= subtrair()>-</button>
+      <button class="calc-button is-zero" (click)= somar()>+</button>
+    </div>
+  </div>
+</div>
+
+
+
+
